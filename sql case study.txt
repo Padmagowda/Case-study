@@ -1,0 +1,38 @@
+TABLE 1:ADMIN
+
+Attributes
+1.AdminID  -->(Primary Key)
+2.AdminName
+3.DeptName
+
+
+TABLE 2:TASK
+
+Attributes
+1.TaskID --> (Primary Key)
+2.TaskName
+3.Description
+4.Status
+5.Priority
+6.AssignDate
+7.CompDate
+8.AdminID -->(Foreign Key)
+
+
+TABLE 3:EMPLOYEE
+
+Attributes:
+1.EmployeeID  -->(Primary Key)
+2.EmployeeName
+3.DeptName
+4.AdminID -->(Foreign Key)
+5.TaskID  -->(Foreign Key)
+
+TABLE 4:NOTES
+
+Attributes:
+1.NotesID -->(Primary Key)
+2.AdminID -->(Foreign Key)
+3.TaskID  -->(Foreign Key)
+4.NotesDetails
+5.Bookmark
